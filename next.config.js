@@ -3,7 +3,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/vitrine",
-  output: "export",  // <=== enables static exports
   reactStrictMode: true,
 }
  
