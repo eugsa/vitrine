@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { NextRequest } from "next/server";
 
 export function GET(request: NextRequest) {
-  let url = new URL(request.nextUrl)
+  let url = request.nextUrl
   let title = url.searchParams.get('title') || 'UX Portfolio'
 
   return new ImageResponse(
