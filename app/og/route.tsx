@@ -1,8 +1,8 @@
 import { ImageResponse } from 'next/og'
-import { NextRequest } from "next/server";
+export const dynamic = "force-dynamic";
 
-export function GET(request: NextRequest) {
-  let url = request.nextUrl
+export function GET(request: Request) {
+  let url = new URL(request.url)
   let title = url.searchParams.get('title') || 'UX Portfolio'
 
   return new ImageResponse(
