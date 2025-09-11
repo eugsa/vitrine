@@ -1,6 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+// @ts-check
+ 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   basePath: "/vitrine",
   reactStrictMode: true,
   output: "export", // enables static exports
@@ -8,5 +9,5 @@ const nextConfig: NextConfig = {
     unoptimized: true, // disables server-based image optimization.
   }
 }
-
-export default nextConfig;
+ 
+module.exports = nextConfig
