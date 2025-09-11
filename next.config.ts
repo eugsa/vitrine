@@ -8,4 +8,5 @@ const nextConfig: NextConfig = {
     unoptimized: true, // disables server-based image optimization.
   }
 }
-module.exports = nextConfig
+
+export default nextConfig;
